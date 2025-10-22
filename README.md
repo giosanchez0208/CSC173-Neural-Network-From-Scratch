@@ -66,4 +66,4 @@ Each member contributed to different components of the network:
 
 This activity provided hands-on experience in building a neural network without relying on high-level ML frameworks. The group collaboratively developed the model, analyzed its training behavior visually, and demonstrated understanding of fundamental AI concepts through both code and documentation.
 
-Video: link
+Video: [link](https://youtu.be/xqDR-LGVT_c)
