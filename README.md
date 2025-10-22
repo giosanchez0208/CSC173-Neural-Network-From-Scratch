@@ -13,8 +13,11 @@ We used the Breast Cancer Wisconsin Diagnostic dataset obtained from these sourc
 - [Scikit-learn breast cancer dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)
 - [UCI Machine Learning Repository (Breast Cancer Wisconsin Diagnostic)](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)  
 
-From this dataset, two numerical features were selected to serve as the inputs to the network.
-The data was normalized and split into training and testing sets to evaluate model performance.
+Two features were selected from the dataset for the input layer of the network:
+- concave_points3
+- perimeter3
+
+These two inputs were chosen due to their strong correlation with the diagnosis label.
 
 ## Network Architecture
 
@@ -28,14 +31,14 @@ This structure allows the model to learn nonlinear patterns from the two input v
 
 - Weight and bias parameters initialized randomly.
 - Forward propagation implements layer-wise computations with chosen activation functions.
-- Loss computed using Mean Squared Error (MSE).
+- Loss computed using Binary Cross-Entropy (BCE) loss instead of Mean Squared Error (MSE) since BCE is better suited for binary classification.
 - Backpropagation calculates gradients of weights and biases.
 - Parameters updated using gradient descent.
-- Training performed for 500 to 1000 iterations.
+- Training performed for 500 to 1000 iterations, gradually minimizing the BCE loss.
 
 ## Results & Visualization
 
-The notebook visualizes:
+After training, the program displays:
 - The decision boundary separating the two classes in the dataset.
 - The training loss curve, showing how the network minimizes error over time.
 
@@ -54,7 +57,7 @@ Each member contributed to different components of the network:
 
 1. Clone the GitHub repository:
    ```
-   git clone [repository_url]
+   git clone https://github.com/giosanchez0208/CSC173-Neural-Network-From-Scratch.git
    ```
 2. Open the Jupyter notebook or Colab file.
 3. Run all cells sequentially.
