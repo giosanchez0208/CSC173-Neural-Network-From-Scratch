@@ -47,11 +47,10 @@ These visualizations help confirm that the neural network successfully learned t
 ## Team Collaboration
 
 Each member contributed to different components of the network:
-- Weight and bias initialization
-- Forward propagation coding
-- Loss function implementation
-- Backpropagation and gradient computation
-- Training loop and visualization
+- Angelyn Jimeno: Network design and architecture
+- Mark Angelo Gallardo: Forward and backward propagation
+- Gio Kiefer Sanchez: Dataset handling, testing, and validation
+
 
 ## How to Run
 
